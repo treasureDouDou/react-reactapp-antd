@@ -1,0 +1,65 @@
+#root {
+  height: 100%;
+
+  .clearfix::before,
+  .clearfix::after {
+    content: '';
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+  // 滚动条样式-----
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: #fff;
+  }
+
+  /*定义滑块 内阴影+圆角*/
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #999;
+  }
+  // 滚动条样式over-----
+  .ant-menu-dark {
+    background: #404040;
+    .ant-menu-item {
+      span {
+        font-size: 12px;
+      }
+    }
+    .ant-menu-item-selected {
+      background: #1da57a;
+    }
+    .ant-menu-inline.ant-menu-sub {
+      background: #333;
+    }
+  }
+  .ant-menu-submenu.ant-menu-submenu-inline {
+    span {
+      font-size: 12px;
+    }
+  }
+
+  // 加载中样式
+  .ant-spin-nested-loading,
+  .ant-spin-container,
+  .ant-spin-container.ant-spin-blur {
+    height: 100%;
+  }
+  .ant-spin-nested-loading > div > .ant-spin {
+    max-height: 100%;
+  }
+
+  //卡片
+  .ant-card-head-title {
+    color: #676a6c;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}

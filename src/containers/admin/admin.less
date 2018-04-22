@@ -1,0 +1,44 @@
+.admin {
+  height: 100%;
+  width: 100%;
+  background: #f0f2f5;
+  position: relative;
+  .left-menu {
+    transition: 0.3s;
+    overflow: hidden;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-right: 1px solid #e8e8e8;
+    // 这里使用float会和antd的card组件css起冲突，导致cs的bug,原因不明
+    // float: left;
+    position: absolute;
+    left: 0;
+    background: #404040;
+    .github {
+      width: 200px;
+      overflow: hidden;
+      color: #fff;
+      cursor: pointer;
+      fill: currentColor;
+      display: block;
+      margin: 15px auto;
+      text-align: left;
+      padding-left: 23px;
+      span {
+        position: relative;
+        top: -10px;
+        margin: 5px 10px;
+        font-size: 14px;
+
+      }
+    }
+  }
+  .right-content {
+    height: 100%;
+    margin-left: 200px;
+    transition: 0.3s;
+    overflow: auto;
+  }
+}
