@@ -16,7 +16,7 @@ create-react-app antd组件 管理系统demo，线上地址http://www.react.doud
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload
 npm start
 
 # build for production with minification
